@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!</title>
+
+    <script>
+        var iterface = document.getElementById("interface")
+
+        function main() {
+            
+      
+            
+        }
+
+        function pergunta1(){
+            alert("cu")
+        }
+
+        function escrever(str, el) {
+            var char = str.split('').reverse();
+            var typer = setInterval(function() {
+                if (!char.length) return clearInterval(typer);
+                var next = char.pop();
+                el.innerHTML += next;
+            }, 60);
+        }
+
+        function proximo() {
+            interface.innerHTML = ""
+            interface.innerHTML = "<p>EFIM nenhuma daquelas perguntas importam. PARABENS</p><br/><br/><img src='lucas1.png'/><br/><br/><img src='jojo.jpg'/>";
+        }
+    </script>
+
+    <style>
+        #interface {
+            margin-top: 5%;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+
+</head>
+
+
+
+<body onload="main()">
+    <center><h1>FELIZ ANIVERSÁRIO</h1></center>
+
+    <center>
+        <div style="border: 1px solid black" id="interface">
+            <label for="p1" >
+                Qual o nome da pessoa mais bonita do mundo?
+                <input id="i1" type="text">
+            </label>
+            <br/><br/>
+            <label for="p1" >
+                Explique pq eu sou um amigo muito bom!
+                <input id="i2" type="text">
+            </label>
+            <br/><br/>
+            <label for="p1" >
+                Sabia que vc mora no meu coração?
+                <input id="i3" type="text">
+            </label>
+            <br/><br/>
+            <label for="p1" >
+                <p>Eu nunca sei dizer feliz anivesario, é mo estranho
+                mas PARABENS você está 1 dia a mais perto da morte</p>
+
+                <p>Por favor não esqueça do seu amiguinho, sujeito a morte!</p>
+            </label>
+
+            <button onclick="proximo()" id="btn">PROXIMO</button>
+
+        </div>
+    </center>
+    
+    
+</body>
+</html>
